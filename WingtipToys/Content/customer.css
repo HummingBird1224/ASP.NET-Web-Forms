@@ -1,0 +1,130 @@
+﻿.list-wrapper {
+    height: 100vh;
+    padding-left: 5px;
+}
+
+.search-wrapper {
+    padding: 10px 5px 5px;
+}
+
+.search-input-wrapper {
+    grid-template-columns: 70% auto;
+    grid-gap: 15px;
+    align-items: center;
+    display: grid;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-input span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.list {
+    position: relative;
+    overflow: auto;
+}
+
+.customer-list-row {
+    width: 100%;
+    height: auto;
+}
+
+.customer-list-details {
+    grid-gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    color: #555;
+    display: grid;
+    grid-template-areas: "first second third";
+    grid-template-columns: max-content 1fr max-content auto;
+    padding: 5px 7px;
+}
+
+    .customer-list-details img {
+        border-radius: 100%;
+        grid-area: first;
+        height: 60px;
+        width: 60px;
+    }
+
+    .customer-list-details div:last-child {
+        grid-gap: 5px;
+        display: grid;
+        grid-area: third;
+        grid-template-columns: repeat(3, max-content);
+    }
+
+    .customer-list-details p span {
+        margin-right: 5px;
+    }
+
+    .customer-list-details .anticon-delete {
+        color: #d42c20;
+    }
+
+    .customer-list-details .anticon-check {
+        color: #15b71a;
+    }
+
+.customer-icon-card {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    color: #555;
+    cursor: pointer;
+    height: max-content;
+    padding: 8px;
+    position: relative;
+    width: max-content;
+}
+
+    .customer-icon-card span {
+        font-size: 22px;
+        vertical-align: middle;
+    }
+
+.customer-wrapper {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    height: 100vh;
+    overflow: auto;
+    padding: 10px 20px 0;
+}
+
+    .customer-wrapper form {
+        grid-gap: 20px;
+        display: grid;
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    .customer-wrapper label {
+            align-self: center;
+            font-weight: 600;
+        }
+
+    .customer-wrapper input {
+        background-color: #f8f8f8;
+        margin-top: 4px;
+    }
+
+.form-group-column-2 {
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+.required {
+    color: #d42c20;
+    margin-left: 5px;
+    vertical-align: middle;
+}

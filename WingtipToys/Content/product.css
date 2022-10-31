@@ -1,0 +1,217 @@
+﻿.category-button {
+	grid-gap: 3px;
+	align-content: center;
+	background-color: var(--pos-secondary-color);
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+	box-sizing: content-box;
+	color: #555;
+	display: inline-grid;
+	font-size: 14px;
+	padding: 8px 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 68px;
+	word-break: break-all;
+	cursor:pointer;
+	justify-content:center;
+	background:white;
+}
+.category-container {
+	grid-gap: 25px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(1px,max-content));
+	margin: 15px 10px 0 0;
+	text-align: center;
+	justify-content:center;
+}
+.category-img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.product-card {
+	grid-gap: 2px;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 124px;
+	margin: 5px;
+	text-align: center;
+}
+	.product-card:hover {
+		opacity: .6;
+		transition: .2s ease;
+	}
+.product-thumbnail {
+	padding: 8px 0 8px 8px;
+}
+	.product-thumbnail img {
+		border-radius: 6px;
+		height: 108px ;
+		width: 100%;
+	}
+.product-details {
+	align-self: center;
+	font-size: var(--pos-layout-font-size);
+	padding: 8px 8px 8px 0;
+}
+.product-name {
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	font-size: 14px;
+	font-weight: 600;
+	overflow: hidden;
+}
+.border-none {
+	border: none
+}
+.cart-wrapper {
+	background-color: white;
+	border-left: 1px solid #ddd;
+	display: grid;
+	height: 100vh;
+	overflow: auto;
+}
+.p-15{
+	padding-left:15px
+}
+.cart-products-list {
+	border-bottom: 1px solid #ddd;
+}
+.cart-header {
+	align-items: center;
+	grid-template-columns: auto max-content max-content;
+	grid-gap: 10px;
+	border-bottom: 1px solid #ddd;
+	display: grid;
+	grid-template-columns: max-content max-content auto;
+	height: max-content;
+	padding: 10px;
+}
+
+.cart-products {
+	display: grid;
+	grid-auto-rows: max-content;
+	height: calc(100vh - 414px);
+	overflow: auto;
+	padding: 10px 10px;
+}
+	.cart-products tr:nth-child(odd) {
+		background-color: #f8f8f8;
+	}
+	.cart-products tr{
+		cursor:pointer;
+		border-radius:10px;
+	}
+	.cart-products td {
+		width: 100%;
+	}
+	.cart-products td:first-child{
+		width:70px;
+		padding-left:10px
+	}
+.product-font {
+	font-family: "Open Sans", sans-serif;
+	color: #555;
+}
+.cart-item-image {
+	border-radius: 10px;
+	height: 50px;
+	vertical-align: middle;
+	width: 50px;
+}
+.cart-product-details {
+	grid-gap: 3px;
+	display: grid;
+	padding: 5px 10px;
+}
+	.cart-product-details p:first-child {
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		color: #6f6f6f;
+		display: -webkit-box;
+		overflow: hidden;
+	}
+	.cart-product-details p {
+		color: #888;
+		font-weight: 600;
+		font-size:16px
+	}
+.cart-product-price {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	color: #6f6f6f;
+	display: -webkit-box;
+	overflow: hidden;
+	font-weight: 600;
+	font-size: 16px
+}
+.delete-button{
+	width:20px
+}
+.cart-product-quantity {
+	display:flex
+}
+.button{
+	cursor:pointer
+}
+.icon-card {
+	background-image: linear-gradient(#027491 0,#2190ac 100%);
+	border-radius: 0;
+	background-color: white;
+	box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+	color: #555;
+	cursor: pointer;
+	height: max-content;
+	position: relative;
+	width: max-content;
+	border:none;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+	.icon-card span {
+		color: white;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+.anticon {
+	display: inline-block;
+	color: inherit;
+	font-style: normal;
+	line-height: 0;
+	text-align: center;
+	text-transform: none;
+	vertical-align: -0.125em;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+	.anticon svg {
+		display: inline-block;
+	}
+.anticon > * {
+	line-height: 1;
+}
+.search-input-wrapper {
+	grid-template-columns: 70% auto;
+	grid-gap: 15px;
+	align-items: center;
+	display: grid;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.search-input {
+	position: relative;
+}
+
+	.search-input span {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
